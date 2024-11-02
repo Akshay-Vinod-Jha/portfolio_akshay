@@ -1,6 +1,13 @@
 import FirstMainBox from "@/components/FirstMainBox";
-import OvalShape from "@/components/Oval";
 const AppPage = () => {
-  return <FirstMainBox />;
+  return (
+    <>
+      {" "}
+      <FirstMainBox />
+      <div
+        className={`bg-[#171717] snap-start subContainer overflow-hidden no-scrollbar w-full h-[100vh] relative `}
+      ></div>
+    </>
+  );
 };
 export default AppPage;

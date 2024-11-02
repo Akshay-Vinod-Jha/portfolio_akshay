@@ -12,8 +12,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`w-screen min-h-screen h-auto no-scrollbar`}>
-        {children}
+      <body
+        className={`w-screen h-screen overflow-y-auto scrollbar-hidden containers`}
+      >
+        <div className="w-screen h-screen overflow-y-scroll snap-y snap-mandatory scrollbar-hidden containers">
+          {children}
+        </div>
       </body>
     </html>
   );
